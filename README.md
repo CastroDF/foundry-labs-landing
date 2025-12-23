@@ -1,17 +1,25 @@
 # Foundry Labs Landing Page
 
-A modern, visual-first landing page built with Next.js 14 and Tailwind CSS. Designed to showcase premium engineering services with a San Francisco tech aesthetic.
+A clean, confident landing page built with Next.js 14 and Tailwind CSS. Designed with restraint and strong typography to showcase senior engineering services.
+
+## Design Principles
+
+- **Typography-first** - Large, bold headings with clean hierarchy
+- **Generous spacing** - Lots of negative space and clear vertical rhythm
+- **Consistent width** - Max-width of 1040px for comfortable reading
+- **Minimal palette** - Neutral grays with subtle borders, no gimmicky gradients
+- **Simple layout** - Single-column narrative with selective use of cards
+- **Subtle interactions** - Gentle hover states, no heavy shadows
+- **No excess** - No random icons, no stock photos, no unnecessary animations
 
 ## Features
 
-- ✨ **Visual-first design** - Clean, spacious layout with impactful visuals
-- 🎨 **Premium aesthetic** - SF tech vibe with sophisticated color palette
-- 📱 **Fully responsive** - Perfect on all devices (mobile, tablet, desktop)
+- 📱 **Fully responsive** - Perfect on all devices
 - 🚀 **SEO optimized** - Comprehensive meta tags and semantic HTML
-- ⚡ **Lightning fast** - Optimized page loads with Next.js 14
+- ⚡ **Lightning fast** - Optimized with Next.js 14
 - 🎯 **Strategic positioning** - Built to attract premium clients
-- 💎 **High-quality UI** - Icons, gradients, and visual hierarchy
 - 📝 **TypeScript** - Full type safety
+- ♿ **Accessible** - Semantic HTML and proper contrast ratios
 
 ## Getting Started
 
