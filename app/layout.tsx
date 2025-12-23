@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Inter, Newsreader } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({
@@ -8,10 +8,11 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const jetbrainsMono = JetBrains_Mono({
+const newsreader = Newsreader({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-jetbrains-mono',
+  variable: '--font-newsreader',
+  weight: ['400', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -53,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
       <body className="font-sans">{children}</body>
     </html>
   )

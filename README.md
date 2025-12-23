@@ -1,16 +1,37 @@
 # Foundry Labs Landing Page
 
-A clean, confident landing page built with Next.js 14 and Tailwind CSS. Designed with restraint and strong typography to showcase senior engineering services.
+A premium editorial landing page for a senior engineering consultancy. Built with Next.js 14 and Tailwind CSS, designed to communicate excellence, judgment, and seniority through restrained, sophisticated design.
 
-## Design Principles
+## Design System
 
-- **Typography-first** - Large, bold headings with clean hierarchy
-- **Generous spacing** - Lots of negative space and clear vertical rhythm
-- **Consistent width** - Max-width of 1040px for comfortable reading
-- **Minimal palette** - Neutral grays with subtle borders, no gimmicky gradients
-- **Simple layout** - Single-column narrative with selective use of cards
-- **Subtle interactions** - Gentle hover states, no heavy shadows
-- **No excess** - No random icons, no stock photos, no unnecessary animations
+### Typography
+- **Serif (Newsreader)** - Used for H1/H2 headings for editorial feel
+- **Sans-serif (Inter)** - Used for body text and UI elements
+- **Scale** - text-5xl to text-6xl on hero, generous line-height for readability
+
+### Color Palette
+- **Paper (#fafaf8)** - Warm off-white background for editorial feel
+- **Ink (#1a1a1a)** - Near-black for text, strong contrast
+- **Grays** - Subtle gray-200/60 borders, gray-600 for secondary text
+- **White surfaces** - Cards and panels on paper background
+
+### Layout Principles
+- **Two-column hero** - Content left, proof panel right
+- **Engagement snapshot** - Honest service snapshot with window chrome UI
+- **Selected experience** - Pills with "In individual capacity" disclaimer
+- **Generous spacing** - py-24 sections, proper breathing room
+- **Maximum widths** - max-w-7xl hero, max-w-5xl content, max-w-3xl prose
+- **Soft borders** - border-gray-200/60 for subtle separation
+- **Rounded corners** - rounded-2xl on cards for premium feel
+
+### Key Features
+- **Editorial aesthetic** - Warm, paper-like background with serif headings
+- **Proof panel** - Week-by-week engagement flow with deliverables
+- **Credibility signals** - Experience pills with honest disclaimer
+- **Reduced problem statement** - Calm insight, not second hero
+- **Premium cards** - Ample padding (p-8), soft borders, hover states
+- **Clean navigation** - Pill hover states, minimal links
+- **No gimmicks** - No buzzwords, no stock photos, no heavy animations
 
 ## Features
 

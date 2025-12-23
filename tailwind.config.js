@@ -9,7 +9,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        serif: ['var(--font-newsreader)', 'Georgia', 'serif'],
+      },
+      colors: {
+        paper: '#fafaf8',
+        ink: '#1a1a1a',
       },
     },
   },

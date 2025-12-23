@@ -4,7 +4,7 @@
 
 :root {
   --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  --font-newsreader: 'Newsreader', Georgia, serif;
 }
 
 @layer base {
@@ -13,7 +13,7 @@
   }
   
   body {
-    @apply text-gray-900 antialiased;
+    @apply text-ink antialiased bg-paper;
   }
 }
 
