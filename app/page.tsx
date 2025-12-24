@@ -128,16 +128,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trusted By Carousel */}
+      {/* Prior Experience */}
       <section className="py-12 px-6 lg:px-12 border-y border-gray-200/60 bg-white">
         <div className="max-w-7xl mx-auto">
-          <p className="text-xs uppercase tracking-wider text-gray-400 text-center mb-8">
-            Trusted by
-          </p>
-          <div className="overflow-hidden relative">
+          <div className="text-center mb-3">
+            <p className="text-xs uppercase tracking-wider text-gray-400 mb-2">
+              Prior experience
+            </p>
+            <p className="text-xs text-gray-400 font-light italic">
+              Work performed by founders in previous roles
+            </p>
+          </div>
+          <div className="overflow-hidden relative mt-5">
             <div className="flex items-center justify-center gap-12 lg:gap-16 flex-wrap">
               {/* Rue Gilt Groupe */}
-              <div className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity flex items-center grayscale">
+              <div className="flex-shrink-0 opacity-50 hover:opacity-70 transition-opacity flex items-center grayscale">
                 <Image
                   src="/rgg.svg"
                   alt="Rue Gilt Groupe"
@@ -148,7 +153,7 @@ export default function Home() {
               </div>
               
               {/* Letsbit */}
-              <div className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity flex items-center grayscale">
+              <div className="flex-shrink-0 opacity-50 hover:opacity-70 transition-opacity flex items-center grayscale">
                 <Image
                   src="/lb-finanzas.png"
                   alt="Let's Bit"
@@ -159,7 +164,7 @@ export default function Home() {
               </div>
               
               {/* Paytient */}
-              <div className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity flex items-center grayscale">
+              <div className="flex-shrink-0 opacity-50 hover:opacity-70 transition-opacity flex items-center grayscale">
                 <Image
                   src="/paytient.svg"
                   alt="Paytient"
@@ -170,7 +175,7 @@ export default function Home() {
               </div>
               
               {/* HomeVision */}
-              <div className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity flex items-center grayscale">
+              <div className="flex-shrink-0 opacity-50 hover:opacity-70 transition-opacity flex items-center grayscale">
                 <Image
                   src="/homevision.svg"
                   alt="HomeVision"
@@ -181,7 +186,7 @@ export default function Home() {
               </div>
               
               {/* Eve Vehicles */}
-              <div className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity flex items-center grayscale">
+              <div className="flex-shrink-0 opacity-50 hover:opacity-70 transition-opacity flex items-center grayscale">
                 <Image
                   src="/eve.png"
                   alt="Eve Vehicles"
@@ -397,10 +402,10 @@ export default function Home() {
           
           <div className="space-y-6 text-lg text-gray-600 leading-relaxed mb-10">
             <p>
-              Foundry Labs was founded by two senior engineers from Rosario, Argentina, with strong academic backgrounds in engineering and economics, and hands-on experience building real systems in high-constraint environments.
+              Foundry Labs was founded by two senior engineers from Rosario, Argentina.
             </p>
             <p>
-              We've worked across startups, internal platforms, and complex operational projects where failure is expensive and shortcuts don't survive reality.
+              Before founding the firm, we worked on early-stage products, mature platforms at scale, and complex internal systems — gaining experience in environments where correctness, reliability, and execution truly matter.
             </p>
           </div>
 
