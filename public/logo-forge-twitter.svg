@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#1a1a1a"/>
+  <!-- The Forge: Two overlapping squares -->
+  <rect x="100" y="100" width="120" height="120" fill="none" stroke="#fafaf8" stroke-width="12"/>
+  <rect x="180" y="180" width="120" height="120" fill="none" stroke="#fafaf8" stroke-width="12"/>
+</svg>

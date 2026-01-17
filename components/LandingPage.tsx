@@ -37,7 +37,14 @@ export function LandingPage({ messages, locale }: { messages: Messages; locale: 
       <nav className="fixed top-0 w-full bg-paper/80 backdrop-blur-sm z-50 border-b border-gray-200/60">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-between items-center h-16">
-            <div className="font-medium tracking-tight text-ink">{messages.nav.brand}</div>
+            <a href="/" className="flex items-center gap-2.5 group">
+              {/* The Forge Logo Mark */}
+              <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none">
+                <rect x="4" y="4" width="14" height="14" stroke="#1a1a1a" strokeWidth="2"/>
+                <rect x="14" y="14" width="14" height="14" stroke="#1a1a1a" strokeWidth="2"/>
+              </svg>
+              <span className="font-medium tracking-tight text-ink">{messages.nav.brand}</span>
+            </a>
             <div className="flex items-center gap-6">
               <LanguageSwitcher currentLocale={locale} />
               <a
@@ -577,7 +584,14 @@ export function LandingPage({ messages, locale }: { messages: Messages; locale: 
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 text-center md:text-left">
             <div>
-              <div className="font-semibold text-ink mb-1">{messages.footer.brand}</div>
+              <div className="flex items-center gap-2 mb-1 justify-center md:justify-start">
+                {/* The Forge Logo Mark */}
+                <svg viewBox="0 0 32 32" className="w-5 h-5" fill="none">
+                  <rect x="4" y="4" width="14" height="14" stroke="#1a1a1a" strokeWidth="2"/>
+                  <rect x="14" y="14" width="14" height="14" stroke="#1a1a1a" strokeWidth="2"/>
+                </svg>
+                <span className="font-semibold text-ink">{messages.footer.brand}</span>
+              </div>
               <p className="text-sm text-gray-500">
                 {messages.footer.tagline}
               </p>

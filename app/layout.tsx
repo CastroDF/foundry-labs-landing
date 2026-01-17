@@ -18,6 +18,11 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   title: 'Foundry Labs | Senior Engineering & Systems Design',
   description: 'We design and build critical systems — with senior judgment first. A senior-led engineering firm helping companies redesign workflows, build reliable systems, and execute complex projects.',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   keywords: [
     'senior engineering',
     'systems design',

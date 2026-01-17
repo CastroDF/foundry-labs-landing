@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" fill="none">
+  <!-- The Forge: Two overlapping squares -->
+  <rect x="4" y="8" width="28" height="28" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+  <rect x="20" y="24" width="28" height="28" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Wordmark -->
+  <text x="68" y="44" fill="#1a1a1a" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="32" font-weight="500" letter-spacing="-0.01em">Foundry Labs</text>
+</svg>
