@@ -2,24 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-newsreader: 'Newsreader', Georgia, serif;
-}
-
 @layer base {
   html {
     @apply scroll-smooth;
   }
-  
+
   body {
-    @apply text-ink antialiased bg-paper;
+    @apply text-ink antialiased bg-surface overflow-x-hidden;
+  }
+
+  ::selection {
+    @apply bg-purple-200 text-purple-900;
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (prefers-reduced-motion: reduce) {
+  .animate-shimmer {
+    animation: none !important;
+  }
+
+  .animate-bounce-slow {
+    animation: none !important;
   }
 }
-

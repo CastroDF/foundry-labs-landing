@@ -1,7 +1,12 @@
-import { getMessages } from '@/lib/i18n'
-import { LandingPage } from '@/components/LandingPage'
-import { messages as enMessages } from '@/messages/en'
 import type { Metadata } from 'next'
+import {
+  NavBar,
+  HeroSection,
+  PhilosophySection,
+  ServicesSection,
+  Footer,
+  DotGrid,
+} from '@/components/landing'
 
 export const metadata: Metadata = {
   title: 'Foundry Labs | Ingeniería Senior y Diseño de Sistemas',
@@ -13,11 +18,6 @@ export const metadata: Metadata = {
     alternateLocale: 'en_US',
     url: 'https://foundrylabs.com/es',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Foundry Labs | Ingeniería Senior y Diseño de Sistemas',
-    description: 'Firma de ingeniería senior ayudando a empresas a rediseñar flujos de trabajo, construir sistemas confiables y ejecutar proyectos complejos.',
-  },
   alternates: {
     canonical: 'https://foundrylabs.com/es',
     languages: {
@@ -28,7 +28,19 @@ export const metadata: Metadata = {
 }
 
 export default function SpanishHome() {
-  const messages = getMessages('es') as typeof enMessages
-  return <LandingPage messages={messages} locale="es" />
+  return (
+    <div className="antialiased">
+      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-black focus:text-white focus:px-4 focus:py-2 focus:rounded-full focus:text-sm">
+        Saltar al contenido principal
+      </a>
+      <DotGrid />
+      <NavBar />
+      <main id="main">
+        <HeroSection />
+        <PhilosophySection />
+        <ServicesSection />
+      </main>
+      <Footer />
+    </div>
+  )
 }
-
