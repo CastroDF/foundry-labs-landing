@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import {
   NavBar,
   HeroSection,
-  PhilosophySection,
   ServicesSection,
   Footer,
   DotGrid,
@@ -37,7 +36,6 @@ export default function SpanishHome() {
       <NavBar />
       <main id="main">
         <HeroSection />
-        <PhilosophySection />
         <ServicesSection />
       </main>
       <Footer />
