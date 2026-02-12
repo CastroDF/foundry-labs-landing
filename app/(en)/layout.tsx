@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
-import { Inter, Newsreader } from 'next/font/google'
-import './globals.css'
+import type { Metadata, Viewport } from 'next'
+import { Inter, Playfair_Display } from 'next/font/google'
+import '../globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -8,12 +8,17 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const newsreader = Newsreader({
+const playfair = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-newsreader',
-  weight: ['400', '600', '700'],
+  variable: '--font-playfair',
+  style: ['normal', 'italic'],
+  weight: ['400', '600'],
 })
+
+export const viewport: Viewport = {
+  themeColor: '#F5F7FA',
+}
 
 export const metadata: Metadata = {
   title: 'Foundry Labs | Senior Engineering & Systems Design',
@@ -60,15 +65,14 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default function EnglishLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="font-sans">{children}</body>
     </html>
   )
 }
-
