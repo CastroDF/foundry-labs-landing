@@ -1,6 +1,10 @@
+'use client'
+
+import { usePostHog } from '@posthog/react'
 import type { Messages } from '@/messages'
 
 export function CTASection({ messages: m }: { messages: Messages }) {
+  const posthog = usePostHog()
   return (
     <section id="contact" className="relative py-32 px-6 bg-surface overflow-hidden">
       <div
@@ -28,6 +32,7 @@ export function CTASection({ messages: m }: { messages: Messages }) {
         <a
           href="mailto:contact@foundry.ar"
           className="inline-block bg-black text-white px-8 py-3 text-lg rounded-full font-medium transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2"
+          onClick={() => posthog.capture('cta_clicked', { location: 'cta_section' })}
         >
           {m.cta.button}
         </a>

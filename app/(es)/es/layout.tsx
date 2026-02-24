@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
+import { Suspense } from 'react'
 import '../../globals.css'
+import { PHProvider } from '../../providers'
+import { PostHogPageView } from '../../PostHogPageView'
+import { getBootstrapData } from '../../utils/getBootstrapData'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -64,14 +68,22 @@ export const metadata: Metadata = {
   },
 }
 
-export default function SpanishLayout({
+export default async function SpanishLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const bootstrapData = await getBootstrapData()
   return (
     <html lang="es" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <PHProvider bootstrapData={bootstrapData}>
+          <Suspense>
+            <PostHogPageView />
+          </Suspense>
+          {children}
+        </PHProvider>
+      </body>
     </html>
   )
 }

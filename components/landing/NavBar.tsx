@@ -1,6 +1,10 @@
+'use client'
+
+import { usePostHog } from '@posthog/react'
 import type { Messages } from '@/messages'
 
 export function NavBar({ messages: m }: { messages: Messages }) {
+  const posthog = usePostHog()
   return (
     <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center w-full px-4">
       <div className="flex items-center justify-between w-full max-w-5xl px-6 py-3 bg-white/70 backdrop-blur-xl border border-white/40 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
@@ -21,6 +25,7 @@ export function NavBar({ messages: m }: { messages: Messages }) {
           <a
             href="mailto:contact@foundry.ar"
             className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2"
+            onClick={() => posthog.capture('cta_clicked', { location: 'navbar' })}
           >
             {m.nav.cta}
           </a>
