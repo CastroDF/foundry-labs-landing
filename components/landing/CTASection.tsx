@@ -2,6 +2,7 @@
 
 import { usePostHog } from '@posthog/react'
 import type { Messages } from '@/messages'
+import { CalendlyButton } from './CalendlyButton'
 
 export function CTASection({ messages: m }: { messages: Messages }) {
   const posthog = usePostHog()
@@ -29,13 +30,12 @@ export function CTASection({ messages: m }: { messages: Messages }) {
           {m.cta.description}
         </p>
 
-        <a
-          href="mailto:contact@foundry.ar"
+        <CalendlyButton
           className="inline-block bg-black text-white px-8 py-3 text-lg rounded-full font-medium transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2"
           onClick={() => posthog.capture('cta_clicked', { location: 'cta_section' })}
         >
           {m.cta.button}
-        </a>
+        </CalendlyButton>
 
         <p className="mt-6 text-sm text-gray-500">
           contact@foundry.ar

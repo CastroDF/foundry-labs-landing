@@ -2,6 +2,7 @@
 
 import { usePostHog } from '@posthog/react'
 import type { Messages } from '@/messages'
+import { CalendlyButton } from './CalendlyButton'
 
 export function NavBar({ messages: m }: { messages: Messages }) {
   const posthog = usePostHog()
@@ -22,13 +23,12 @@ export function NavBar({ messages: m }: { messages: Messages }) {
         </div>
 
         <div>
-          <a
-            href="mailto:contact@foundry.ar"
+          <CalendlyButton
             className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-medium transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2"
             onClick={() => posthog.capture('cta_clicked', { location: 'navbar' })}
           >
             {m.nav.cta}
-          </a>
+          </CalendlyButton>
         </div>
       </div>
     </nav>

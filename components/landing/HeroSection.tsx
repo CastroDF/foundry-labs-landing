@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { Card3D } from './Card3D'
 import { GradientText } from './GradientText'
+import { CalendlyButton } from './CalendlyButton'
 import type { Messages } from '@/messages'
 
 const CARD_INDICES = Array.from({ length: 40 }, (_, i) => i)
@@ -108,12 +109,11 @@ export function HeroSection({ messages: m }: { messages: Messages }) {
             {m.hero.description}
           </p>
 
-          <a
-            href="mailto:contact@foundry.ar"
+          <CalendlyButton
             className="inline-block px-8 py-3 text-sm font-medium tracking-wide uppercase border border-gray-400 rounded-full text-gray-700 hover:bg-black hover:text-white hover:border-black transition-colors duration-300"
           >
             {m.hero.cta}
-          </a>
+          </CalendlyButton>
         </div>
 
       </div>
