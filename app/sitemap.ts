@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://foundrylabs.com'
-  
+  const baseUrl = 'https://foundry.ar'
+
   return [
     {
       url: baseUrl,
@@ -11,22 +11,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
       alternates: {
         languages: {
-          es: `${baseUrl}/es`,
+          en: `${baseUrl}/en`,
         },
       },
     },
     {
-      url: `${baseUrl}/es`,
+      url: `${baseUrl}/en`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
       alternates: {
         languages: {
-          en: baseUrl,
+          es: baseUrl,
         },
       },
     },
   ]
 }
-
-

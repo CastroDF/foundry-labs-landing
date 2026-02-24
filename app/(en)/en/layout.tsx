@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { Suspense } from 'react'
-import '../globals.css'
-import { PHProvider } from '../providers'
-import { PostHogPageView } from '../PostHogPageView'
-import { getBootstrapData } from '../utils/getBootstrapData'
+import '../../globals.css'
+import { PHProvider } from '../../providers'
+import { PostHogPageView } from '../../PostHogPageView'
+import { getBootstrapData } from '../../utils/getBootstrapData'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://foundrylabs.com',
+    url: 'https://foundry.ar/en',
     siteName: 'Foundry Labs',
     title: 'Foundry Labs | Senior Engineering & Systems Design',
     description: 'We design and build critical systems — with senior judgment first. A senior-led engineering firm helping companies redesign workflows, build reliable systems, and execute complex projects.',
@@ -61,10 +61,10 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://foundrylabs.com',
+    canonical: 'https://foundry.ar/en',
     languages: {
-      'en-US': 'https://foundrylabs.com',
-      'es-AR': 'https://foundrylabs.com/es',
+      'en-US': 'https://foundry.ar/en',
+      'es-AR': 'https://foundry.ar',
     },
   },
 }
